@@ -1,0 +1,30 @@
+#welcome-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    text-align: center;
+  
+    h1 {
+      font-size: 3em;
+      color: #333;
+    }
+  
+    p {
+      font-size: 1.2em;
+      color: #555;
+      max-width: 600px;
+      margin: 10px;
+      line-height: 1.6;
+    }
+  
+    #my-photo {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      margin-bottom: 20px;
+    }
+  }
