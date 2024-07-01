@@ -1,0 +1,16 @@
+// Variáveis e estilos globais
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+@import './Navbar.scss';
+@import './WelcomeSection.scss';
+@import './Projects.scss';
+@import './Contact.scss';

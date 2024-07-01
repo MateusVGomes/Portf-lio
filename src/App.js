@@ -1,9 +1,9 @@
 import React from 'react';
+import './estilos/App.scss';
 import Navbar from './components/Navbar';
 import WelcomeSection from './components/WelcomeSection';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
-import './App.css';
 
 function App() {
   return (
