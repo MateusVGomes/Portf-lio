@@ -4,8 +4,8 @@ import '../estilos/WelcomeSection.scss';
 
 function WelcomeSection() {
   return (
-    <section id="welcome-section">
-      <img src={perfilImage} alt="Uma foto mostrando quem eu sou" id="my-photo" />
+    <section className="welcome-section" id="welcome-section">
+      <img src={perfilImage} alt="Uma foto de quem eu sou" id="my-photo" />
       <h1>Bem-vindo ao meu Portfólio</h1>
       <p>
         Olá meu nome é Mateus mas meus amigos só me chamam de Gomes, Tudo bem?! Sou formado em Ciência da Computação pela UNICAP. Atualmente, estou me aprofundando em marketing digital com Google Ads, Node.js, Express e MongoDB. Tenho experiência em Java focada em aplicativos de console, além de um forte conhecimento em front-end com HTML, CSS, JavaScript e React. Desenvolvi uma API para um sistema de almoxarifado durante meu tempo na empresa júnior da faculdade.
