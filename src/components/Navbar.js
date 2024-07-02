@@ -1,14 +1,17 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import '../estilos/Navbar.scss';
 
 const Navbar = () => {
   const [theme, setTheme] = useState('light');
 
+  useEffect(() => {
+    document.body.className = theme;
+  }, [theme]);
+
   const toggleTheme = () => {
     const newTheme = theme === 'light' ? 'dark' : 'light';
     setTheme(newTheme);
-    document.documentElement.setAttribute('data-theme', newTheme);
   };
 
   return (
