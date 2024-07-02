@@ -1,10 +1,11 @@
+/* Navbar.scss */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  background-color: var(--navbar-bg-color);
-  color: var(--navbar-text-color);
+  background-color: var(--nav-bg-color); /* Usando a variável de cor de fundo */
+  color: var(--nav-text-color); /* Usando a variável de cor de texto */
 
   ul {
     display: flex;
@@ -17,12 +18,12 @@
 
       a {
         text-decoration: none;
-        color: var(--navbar-text-color);
+        color: var(--nav-text-color); /* Usando a variável de cor de texto */
         font-weight: bold;
         transition: color 0.3s;
 
         &:hover {
-          color: var(--text-color);
+          color: var(--nav-hover-bg-color); /* Usando a variável de cor de hover */
         }
       }
     }
@@ -33,15 +34,3 @@
   cursor: pointer;
   font-size: 1.5rem;
 }
-  
-  .theme-toggle {
-    cursor: pointer;
-    font-size: 1.5rem;
-  }
-  @media (max-width: 600px) {
-    #navbar li {
-      display: block;
-      margin: 10px 0;
-    }
-  }
-  

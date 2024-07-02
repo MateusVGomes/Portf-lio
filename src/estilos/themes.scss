@@ -1,6 +1,6 @@
 :root {
-    --nav-bg-color: #333;
-    --nav-text-color: #fff;
+    --nav-bg-color: #f0f0f0; /* Cor de fundo cinza claro para o modo claro */
+    --nav-text-color: #333;
     --nav-hover-bg-color: #555;
   
     --bg-color: #fff;
@@ -9,7 +9,7 @@
   }
   
   body.dark {
-    --nav-bg-color: #222;
+    --nav-bg-color: #333; /* Cor de fundo escura para o modo escuro */
     --nav-text-color: #ddd;
     --nav-hover-bg-color: #444;
   
@@ -19,8 +19,8 @@
   }
   
   body.light {
-    --nav-bg-color: #333;
-    --nav-text-color: #fff;
+    --nav-bg-color: #f0f0f0; /* Cor de fundo cinza claro para o modo claro */
+    --nav-text-color: #333;
     --nav-hover-bg-color: #555;
   
     --bg-color: #fff;
