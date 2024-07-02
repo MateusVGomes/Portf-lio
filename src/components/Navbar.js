@@ -6,12 +6,24 @@ const Navbar = () => {
   const [theme, setTheme] = useState('light');
 
   useEffect(() => {
-    document.body.className = theme;
-  }, [theme]);
+    const savedTheme = localStorage.getItem('theme');
+    const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+    if (savedTheme) {
+      setTheme(savedTheme);
+      document.body.className = savedTheme;
+    } else {
+      const initialTheme = prefersDarkScheme ? 'dark' : 'light';
+      setTheme(initialTheme);
+      document.body.className = initialTheme;
+    }
+  }, []);
 
   const toggleTheme = () => {
     const newTheme = theme === 'light' ? 'dark' : 'light';
     setTheme(newTheme);
+    document.body.className = newTheme;
+    localStorage.setItem('theme', newTheme);
   };
 
   return (

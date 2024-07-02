@@ -6,6 +6,8 @@
     --bg-color: #fff;
     --text-color: #000;
     --link-color: #0073e6;
+    --project-bg-color: #e0e0e0; /* Cor de fundo para a seção de projetos no modo claro */
+    --contact-bg-color: #f4f4f4; /* Cor de fundo para a seção de contatos no modo claro */
   }
   
   body.dark {
@@ -16,6 +18,8 @@
     --bg-color: #121212;
     --text-color: #fff;
     --link-color: #4dabf7;
+    --project-bg-color: #1e1e1e; /* Cor de fundo para a seção de projetos no modo escuro */
+    --contact-bg-color: #1a1a1a; /* Cor de fundo para a seção de contatos no modo escuro */
   }
   
   body.light {
@@ -26,6 +30,8 @@
     --bg-color: #fff;
     --text-color: #000;
     --link-color: #0073e6;
+    --project-bg-color: #e0e0e0; /* Cor de fundo para a seção de projetos no modo claro */
+    --contact-bg-color: #f4f4f4; /* Cor de fundo para a seção de contatos no modo claro */
   }
   
   body {
